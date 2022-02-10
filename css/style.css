@@ -1,6 +1,11 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'IBM Plex Sans',sans-serif;
 
+
+
+
+
+
 .main-filter{
     font-family:IBM Plex Sans, sans-serif;
     display: flex;
@@ -165,27 +170,23 @@ font-family: 'IBM Plex Sans',sans-serif;
     
     
      
- }
+}
  .btn-group1 input{
     border: none;
     text-align: center;
- }
- .btn-group2 input{
+}
+.btn-group2 input{
      border: none;
      text-align: center;
- }
+}
 .search-filter .btn-group1, .btn-group2{
     justify-content: space-between;
 }
-.btn-group1 input[type="text"]:focus{
-    
-      
-    
-}
+
 .main-filter-buttons a{
     position: 
     left: 0px;
 }
-.main-filter-buttons a{
-    
+ {
+
 }
