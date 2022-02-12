@@ -98,6 +98,7 @@ font-family: 'IBM Plex Sans',sans-serif;
 .main-filter-buttons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
    /* margin-top: 15px;
 
     height: 50px;
@@ -130,9 +131,17 @@ font-family: 'IBM Plex Sans',sans-serif;
    
 }
 .main-filter-buttons a{
-    margin: auto 0 auto 0;
+    
+    margin: auto auto auto 0;
+
 }
 
+.main-filter-buttons a img{
+    margin-left: 5px;
+
+    
+    
+}
 
 /*.btn {
     display: inline-block;
@@ -174,7 +183,7 @@ font-family: 'IBM Plex Sans',sans-serif;
      display: flex;
      align-items: center;
      border-right: 1px solid #ccc;
-     flex-basis: 15%;
+     flex-basis: 5%;
      margin: 15px 20px 15px 20px;
    
     
@@ -190,11 +199,10 @@ font-family: 'IBM Plex Sans',sans-serif;
     justify-content: space-between;
 }
 
-.main-filter-buttons a img{
-    margin-left: 5px;
-    
-    
-}
 .btn-group1{
     padding-right: 15px;
+}
+.text-property p{
+    font-size: 50px;
+    min-height: 150px;
 }
