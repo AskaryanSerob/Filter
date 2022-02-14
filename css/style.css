@@ -263,3 +263,21 @@ img{vertical-align:top;}
     padding-right: 15px;
 
 }
+footer{
+  
+}
+.container{
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.info-ft{
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+
+}
+.info-ft-item{
+    display: block;
+}
