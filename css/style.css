@@ -2,12 +2,64 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'IBM Plex Sans',sans-serif;
 
 
+/*Обращение ко всем стилям*/
+*{
+  padding:0;
+  margin:0;
+  border:0;
+}
+/*Меняем посчет ширины блока, что бы удочно было верстать.*/
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -box-sizing: border-box;
+}
+/*Убираем линии обводки у некоторых браузеров.*/
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+/*Делаем значение некоторых тегов блочными*/
+nav, footer, header, aside{display: block;}
+
+/*Уравнивают поведение шрифтов и элементов для разных браюзеров, запрещают самовольное увеличение шрифта.*/
+html, body{
+  height:100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit--text-size-adjust: 100%;
+}
+
+/*то бы теги наследовали семество шрифта.*/
+input,button,textarea{font-family:inherit;}
+
+/*Убирают крестик в input, лишние отступы в Firefox, чистятся стили маркированных списков.*/
+input::-ms-clear{display:none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+
+/*Обнуляем все заголовки Н*/
+ h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight}*/
 
 
 
 
-.main-filter{
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+
+
+
+
+
+.main-filter {
+    font-family: IBM Plex Sans, sans-serif;
     display: flex;
     margin-top: 50px;
     padding: 15px;
@@ -15,11 +67,14 @@ font-family: 'IBM Plex Sans',sans-serif;
 
     
 }
+.form-control{
+
+}
 .search-filter{ /*Свойста контейнера Поиск*/
     display: flex;
     justify-content: space-around;
     background: #ffffff;
-    border-radius: 6px;
+    border-radius: 10px;
     flex-wrap: nowrap;
     height: 60px;
     -webkit-box-shadow: 7px 15px 24px 0px rgba(34, 60, 80, 0.2);
@@ -28,38 +83,34 @@ font-family: 'IBM Plex Sans',sans-serif;
     
 
 }
+.select-button{
+    border-right: 1px solid #c7c7c7;
+}
 
 
-.btn-group_studia{  /*Свойства раздела Студиа*/
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+.studia{  /*Свойства раздела Студиа*/
     display: flex;
-    border-right: 1px solid  #000000;
-    margin: 15px 20px 15px 20px;
-    text-align: center;
-    width: 20%;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #c7c7c7;
     cursor: pointer;
-    box-shadow: none !important;
+    
+    
 
 
  
 }
 
-.btn-group_studia_1{
+.studia-items{
     display: block;
-    width: 100%;
     border-right: 1px solid #000000;
-    text-align: center;
-    height: 100%;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-left: 10px;
+    padding: 5px 10px;
     
     
-   
-    
+}
+#studia-items4{
+    border-right: none;
 }
 
 /*.main-filter .form-control, .main-filter .form-control:focus, .main-filter .form-control:active, .main-filter .form-control:hover {
@@ -72,7 +123,7 @@ font-family: 'IBM Plex Sans',sans-serif;
     height: 100%;
     border: none;
     box-shadow: none !important;
-    font-size: 16px;
+   
     cursor: pointer;
     text-align: center;
     background: url(/img/Vector12.png);
@@ -85,7 +136,7 @@ font-family: 'IBM Plex Sans',sans-serif;
     /*-moz-appearance: none;
     -webkit-appearance: none;*/
     appearance: none;
-    border-right: 1px solid #ccc;
+   
 }
 .option {
     font-weight: normal;
@@ -106,8 +157,6 @@ font-family: 'IBM Plex Sans',sans-serif;
 }
 
 .main-filter-buttons .btn-primary{
-    
-    
     margin: 15px 10px 10px 10px;
     height: 50px;
     border-radius: 10px;
@@ -131,7 +180,7 @@ font-family: 'IBM Plex Sans',sans-serif;
    
 }
 .main-filter-buttons a{
-    
+    display: inline-block;
     margin: auto auto auto 0;
 
 }
@@ -169,23 +218,18 @@ font-family: 'IBM Plex Sans',sans-serif;
     background-position: left;
 }
     
-.btn-group2{
-    display: flex;
-    align-items: center;
-    flex-basis: 5%;
-    margin: 15px 0px 15px 0px;
-}
-.btn-group1{
+
+.btn-group{
     /* position: relative;
      display: flex;
      vertical-align: middle;
      flex-direction:row;*/
      display: flex;
      align-items: center;
-     border-right: 1px solid #ccc;
+     border-right: 1px solid #c7c7c7;
      flex-basis: 5%;
      margin: 15px 20px 15px 20px;
-   
+     padding-right: 15px;
     
     
      
@@ -195,14 +239,25 @@ font-family: 'IBM Plex Sans',sans-serif;
     text-align: center;
 }
 
-.search-filter .btn-group1, .btn-group2{
+.search-filter .group1, .group2{
     justify-content: space-between;
 }
 
-.btn-group1{
-    padding-right: 15px;
-}
+
 .text-property p{
     font-size: 50px;
     min-height: 150px;
+}
+
+.group1{
+    display: flex;
+}
+.cahe-off, .cahe-on{
+    display: block;
+    justify-content: center;
+    align-self: center;
+}
+.cahe-on{
+    border-right: #000000;
+
 }
