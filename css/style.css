@@ -80,7 +80,7 @@ img{vertical-align:top;}
     -webkit-box-shadow: 7px 15px 24px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 7px 15px 24px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 7px 15px 24px 0px rgba(34, 60, 80, 0.2);
-    
+    max-width: 1184px;
 
 }
 .select-button{
@@ -123,7 +123,6 @@ img{vertical-align:top;}
     height: 100%;
     border: none;
     box-shadow: none !important;
-   
     cursor: pointer;
     text-align: center;
     background: url(/img/Vector12.png);
@@ -253,11 +252,14 @@ img{vertical-align:top;}
     display: flex;
 }
 .cahe-off, .cahe-on{
-    display: block;
+    display: flex;
     justify-content: center;
     align-self: center;
+    width: 16%;
+    
+
 }
-.cahe-on{
-    border-right: #000000;
+.cahe-on {
+    padding-right: 15px;
 
 }
