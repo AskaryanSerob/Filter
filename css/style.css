@@ -70,6 +70,9 @@ img{vertical-align:top;}
 .form-control{
 
 }
+.search-filter input {
+	font-size: 16px;
+}
 .search-filter{ /*Свойста контейнера Поиск*/
     display: flex;
     justify-content: space-around;
@@ -77,11 +80,9 @@ img{vertical-align:top;}
     border-radius: 10px;
     flex-wrap: nowrap;
     height: 60px;
-    -webkit-box-shadow: 7px 15px 24px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 7px 15px 24px 0px rgba(34, 60, 80, 0.2);
-    box-shadow: 7px 15px 24px 0px rgba(34, 60, 80, 0.2);
-    max-width: 1184px;
-
+    box-shadow: 0px 8px 20px rgb(0 0 0 / 25%);
+    border-radius: 10px;
 }
 .select-button{
     border-right: 1px solid #c7c7c7;
@@ -135,7 +136,7 @@ img{vertical-align:top;}
     /*-moz-appearance: none;
     -webkit-appearance: none;*/
     appearance: none;
-   
+	font-size: 16px;
 }
 .option {
     font-weight: normal;
@@ -244,8 +245,11 @@ img{vertical-align:top;}
 
 
 .text-property p{
-    font-size: 50px;
-    min-height: 150px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 31px;
+	color: #333333;
+	margin-top:50px;
 }
 
 .group1{
@@ -255,9 +259,7 @@ img{vertical-align:top;}
     display: flex;
     justify-content: center;
     align-self: center;
-    width: 16%;
-    
-
+    width: auto;
 }
 .cahe-on {
     padding-right: 15px;
@@ -272,12 +274,27 @@ footer {
     box-shadow: 0 0 25px rgb(0 0 0 / 10%);
     width: 100%;
 }
+.footer-logo {
+	width:40px;
+}
+
+.footer h5 {
+	font-weight:bold;
+}
+.footer ul li a {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	display: inline-block;
+	margin-bottom:4px;
+	color: #333333;
+}
+/* 
 .container{
     display: block;
     flex-direction: column;
-   
-    
-}
+} */
 /*.info-ft{
     display: flex;
     justify-content: space-between;
@@ -296,16 +313,39 @@ main{
    
 }
 .footer-top{
-    
     text-align:left;
 }
+.footer-top ul li {
+	margin-bottom:5px;
+}
+.footer-top img {
+	width:16px;
+}
+
 .footer-bottom{
     padding: 10px;
     text-align: center;
 }
 .info-ft-two{
     border-top: 1px solid #c7c7c7;
+	padding-top: 10px;
 }
 ul{
   padding: 0;  
+}
+
+.main-filter {
+	padding-left:0;
+	padding-right:0;
+}
+.main-filter-buttons {
+	padding-left:0;
+	padding-right:0;
+}
+
+.mr0 {
+	margin-right:0 !important;
+}
+.ml0 {
+	margin-left:0 !important;
 }
